@@ -1,19 +1,21 @@
 struct MyQuestionAnswerer {
     func responseTo(question: String) -> String {
         // PENDIENTE: Escribir una respuesta
-        question.lowercased()
-        
-        if question.hasPrefix(" "){
+        let lowerCasedQuestion =  question.lowercased()
+        print(lowerCasedQuestion)
+        if lowerCasedQuestion.hasPrefix(" "){
             return "Esa no es una pregunta >:("
-        } else if question.hasPrefix("Cómo"){
+        } else if lowerCasedQuestion.hasPrefix("cómo"){
             return "Como quieras!"
-        } else if question.hasPrefix("Cuándo"){
+        } else if lowerCasedQuestion.hasPrefix("cuándo"){
             return "Cuando tu lo decidas"
-        }else if question.hasPrefix("Por qué"){
+        }else if lowerCasedQuestion.hasPrefix("por qué"){
             return "Porque tienes la culpa"
+        } else {
+            return "No entiendo tu pregunta"
         }
         
         
-        return "?"
+        
     }
 }
