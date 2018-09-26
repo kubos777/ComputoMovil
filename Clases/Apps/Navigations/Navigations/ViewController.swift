@@ -24,24 +24,29 @@ class ViewController: UIViewController {
     @IBAction func unwindToFirst(unwindSegue: UIStoryboardSegue){
         
         }
-
-    @IBOutlet weak var textField: UITextField!
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //print("Se ejecuto el segue en red")
-        segue.destination.navigationItem.title = textField.text
+    
+    @IBOutlet weak var segueSwitch: UISwitch!
+    
+    @IBAction func segueButton(_ sender: Any) {
+        if segueSwitch.isOn{
+            performSegue(withIdentifier: "Green", sender: nil)
+        }
+        else{
+            performSegue(withIdentifier: "Yellow", sender: nil)
+        }
     }
     
     
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
 }
+    
+    
+    
+    
+    
+    
+    
+    
 

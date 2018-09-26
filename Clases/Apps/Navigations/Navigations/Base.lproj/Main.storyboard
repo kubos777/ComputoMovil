@@ -19,20 +19,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoD-Fp-a2G">
-                                <rect key="frame" x="161" y="293" width="53" height="81"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="57"/>
-                                <state key="normal" title="jai"/>
+                                <rect key="frame" x="26.5" y="308" width="322" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Cambiar view controller">
+                                    <color key="titleColor" red="0.53920535002588066" green="1" blue="0.82605400328427481" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
-                                    <segue destination="f9m-ZI-thJ" kind="show" id="1cj-xc-EbS"/>
+                                    <action selector="segueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tb8-am-4Lb"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Holi" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="vdR-LP-ELv">
-                                <rect key="frame" x="120" y="203" width="212" height="30"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WhN-2h-pet">
+                                <rect key="frame" x="165" y="231" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.54169895736357931" blue="0.61500753211996151" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -45,7 +44,9 @@
                         <barButtonItem key="backBarButtonItem" title="Regresar" id="Zgg-Jv-hy7"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="textField" destination="vdR-LP-ELv" id="BgE-aT-05u"/>
+                        <outlet property="segueSwitch" destination="WhN-2h-pet" id="7aT-UK-5sB"/>
+                        <segue destination="azN-sF-IeG" kind="show" identifier="Yellow" id="voP-fZ-CzC"/>
+                        <segue destination="f9m-ZI-thJ" kind="show" identifier="Green" id="NC0-Kj-ag1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -59,21 +60,7 @@
                     <view key="view" contentMode="scaleToFill" id="wfy-5V-iuJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7y-U4-ikB">
-                                <rect key="frame" x="159" y="293" width="57" height="81"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="57"/>
-                                <state key="normal" title="fai"/>
-                                <connections>
-                                    <segue destination="azN-sF-IeG" kind="show" id="wHY-2U-yqv"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="0.82926479191413904" green="1" blue="0.60188743569640812" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="U7y-U4-ikB" firstAttribute="centerX" secondItem="wfy-5V-iuJ" secondAttribute="centerX" id="Rvk-WJ-Vd2"/>
-                            <constraint firstItem="U7y-U4-ikB" firstAttribute="centerY" secondItem="wfy-5V-iuJ" secondAttribute="centerY" id="SUv-Be-gVh"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mgc-JE-yc2"/>
                     </view>
                     <navigationItem key="navigationItem" title="Green VC" id="9eP-EH-e1N">
@@ -82,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7OC-KW-87W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3453.5999999999999" y="134.48275862068968"/>
+            <point key="canvasLocation" x="2671" y="949"/>
         </scene>
         <!--Blue VC-->
         <scene sceneID="tNm-2t-b5D">
@@ -91,24 +78,28 @@
                     <view key="view" contentMode="scaleToFill" id="iwK-zS-lca">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q7D-eQ-euE">
+                                <rect key="frame" x="49" y="157" width="277" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">El navigation controller es una pila de vistas, nosotros tenemos que indicarle cómo ir hacia adelante pero él me ayuda a ir hacia atrás.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="0.69173520139218347" green="0.9280949640051811" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="fDr-DP-Qb8"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Blue VC" largeTitleDisplayMode="never" id="yBe-j5-xPp">
+                    <navigationItem key="navigationItem" title="Blue VC" largeTitleDisplayMode="always" id="yBe-j5-xPp">
                         <barButtonItem key="backBarButtonItem" title="Regresar" id="QrC-0j-MpL"/>
-                        <barButtonItem key="rightBarButtonItem" title="Salir" id="swH-mh-KN3">
-                            <connections>
-                                <segue destination="AGi-2D-eVG" kind="unwind" unwindAction="unwindToFirstWithUnwindSegue:" id="2XN-V8-zSb"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIi-Pz-cLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="AGi-2D-eVG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4231.1999999999998" y="134.48275862068968"/>
+            <point key="canvasLocation" x="3900" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dIM-dF-zi3">
