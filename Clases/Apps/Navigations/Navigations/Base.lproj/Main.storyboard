@@ -18,20 +18,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoD-Fp-a2G">
-                                <rect key="frame" x="161" y="253" width="53" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoD-Fp-a2G">
+                                <rect key="frame" x="161" y="293" width="53" height="81"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="57"/>
                                 <state key="normal" title="jai"/>
                                 <connections>
                                     <segue destination="f9m-ZI-thJ" kind="show" id="1cj-xc-EbS"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Holi" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="vdR-LP-ELv">
+                                <rect key="frame" x="120" y="203" width="212" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.54169895736357931" blue="0.61500753211996151" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="AoD-Fp-a2G" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IQS-40-4UO"/>
+                            <constraint firstItem="AoD-Fp-a2G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kGI-J6-WFI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Red VC" id="nh4-gx-jCy"/>
+                    <navigationItem key="navigationItem" title="Red VC" id="nh4-gx-jCy">
+                        <barButtonItem key="backBarButtonItem" title="Regresar" id="Zgg-Jv-hy7"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="vdR-LP-ELv" id="BgE-aT-05u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,9 +60,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7y-U4-ikB">
-                                <rect key="frame" x="175" y="246" width="57" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7y-U4-ikB">
+                                <rect key="frame" x="159" y="293" width="57" height="81"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="57"/>
                                 <state key="normal" title="fai"/>
                                 <connections>
@@ -56,9 +70,15 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.82926479191413904" green="1" blue="0.60188743569640812" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="U7y-U4-ikB" firstAttribute="centerX" secondItem="wfy-5V-iuJ" secondAttribute="centerX" id="Rvk-WJ-Vd2"/>
+                            <constraint firstItem="U7y-U4-ikB" firstAttribute="centerY" secondItem="wfy-5V-iuJ" secondAttribute="centerY" id="SUv-Be-gVh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mgc-JE-yc2"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Green VC" id="9eP-EH-e1N"/>
+                    <navigationItem key="navigationItem" title="Green VC" id="9eP-EH-e1N">
+                        <barButtonItem key="backBarButtonItem" title="Regresar" id="4SM-jv-LbZ"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7OC-KW-87W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,23 +91,17 @@
                     <view key="view" contentMode="scaleToFill" id="iwK-zS-lca">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvX-FP-zhg">
-                                <rect key="frame" x="151" y="241" width="73" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="57"/>
-                                <state key="normal" title="bai"/>
-                                <connections>
-                                    <segue destination="AGi-2D-eVG" kind="unwind" unwindAction="unwindToFirstWithUnwindSegue:" id="iDl-ip-rnP"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="0.69173520139218347" green="0.9280949640051811" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="fDr-DP-Qb8"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Blue VC" id="yBe-j5-xPp">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="swH-mh-KN3"/>
+                    <navigationItem key="navigationItem" title="Blue VC" largeTitleDisplayMode="never" id="yBe-j5-xPp">
+                        <barButtonItem key="backBarButtonItem" title="Regresar" id="QrC-0j-MpL"/>
+                        <barButtonItem key="rightBarButtonItem" title="Salir" id="swH-mh-KN3">
+                            <connections>
+                                <segue destination="AGi-2D-eVG" kind="unwind" unwindAction="unwindToFirstWithUnwindSegue:" id="2XN-V8-zSb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -101,8 +115,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kLc-sC-hWc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pqX-th-ebb">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="pqX-th-ebb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
