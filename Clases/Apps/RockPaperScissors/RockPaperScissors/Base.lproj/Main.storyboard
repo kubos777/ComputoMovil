@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,104 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zDV-j1-No7">
+                                <rect key="frame" x="26.5" y="161" width="322" height="345.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="q5o-af-5oZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="322" height="345.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vdV-3d-ELN">
+                                                <rect key="frame" x="28" y="0.0" width="266" height="118.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1l-uV-ZeC">
+                                                        <rect key="frame" x="76" y="0.0" width="114" height="91"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="76"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Piedra, papel o tijeras?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIy-bV-4v9">
+                                                        <rect key="frame" x="0.0" y="91" width="266" height="27.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                                        <color key="textColor" red="0.41119907323897548" green="0.20845103557860631" blue="0.75133581606217614" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="K1l-uV-ZeC" firstAttribute="leading" secondItem="vdV-3d-ELN" secondAttribute="leading" constant="76" id="PmL-9k-QAt"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="duD-5K-ePf">
+                                                <rect key="frame" x="8.5" y="164.5" width="305" height="96"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4c0-Bz-lFE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="96"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                        <state key="normal" title="👊🏽"/>
+                                                        <connections>
+                                                            <action selector="rockPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89E-dV-PXx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YkA-QT-fnV">
+                                                        <rect key="frame" x="115" y="0.0" width="75" height="96"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                        <state key="normal" title="🤚🏽"/>
+                                                        <connections>
+                                                            <action selector="paperPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G1R-g1-FQk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQH-FS-WPq">
+                                                        <rect key="frame" x="230" y="0.0" width="75" height="96"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                        <state key="normal" title="✌🏽"/>
+                                                        <connections>
+                                                            <action selector="scissorsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G2C-Py-tc8"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26K-5T-QX5">
+                                                <rect key="frame" x="63" y="306.5" width="196" height="39"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <state key="normal" title="Jugar de nuevo">
+                                                    <color key="titleColor" red="0.1010139728944273" green="0.14591953346238723" blue="0.59330472797927469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playAgainPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RFg-LW-tTw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="vdV-3d-ELN" firstAttribute="leading" secondItem="q5o-af-5oZ" secondAttribute="leading" constant="28" id="Daa-gK-DEH"/>
+                                            <constraint firstItem="26K-5T-QX5" firstAttribute="leading" secondItem="q5o-af-5oZ" secondAttribute="leading" constant="63" id="lD3-fg-mVM"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79039275734497982" green="0.79855488989637302" blue="0.78143136447293704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zDV-j1-No7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N8V-8l-uCw"/>
+                            <constraint firstItem="zDV-j1-No7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ruw-ra-dRa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="alien" destination="K1l-uV-ZeC" id="MB4-LS-1We"/>
+                        <outlet property="paperButton" destination="YkA-QT-fnV" id="G6S-pt-Cdu"/>
+                        <outlet property="playAgainButton" destination="DQH-FS-WPq" id="FJX-Ql-MSp"/>
+                        <outlet property="rockButton" destination="4c0-Bz-lFE" id="u1B-wW-bGv"/>
+                        <outlet property="scissorsButton" destination="DQH-FS-WPq" id="UUN-4t-990"/>
+                        <outlet property="status" destination="bIy-bV-4v9" id="HCv-D1-La7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
 </document>
