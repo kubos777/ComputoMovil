@@ -2,13 +2,13 @@
 //  ViewController.swift
 //  personalityQuiz
 //
-//  Created by Usuario invitado on 10/10/18.
-//  Copyright © 2018 kubos777. All rights reserved.
+//  Created by kubOS on 11/10/18.
+//  Copyright © 2018 kubOS. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class IntroductionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
