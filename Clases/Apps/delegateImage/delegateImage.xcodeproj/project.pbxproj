@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC70CEE32180E1CF00942DD6 /* imageDownloaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC70CEE22180E1CF00942DD6 /* imageDownloaderDelegate.swift */; };
 		ACF49F62217E419700AF7FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF49F61217E419700AF7FCC /* AppDelegate.swift */; };
 		ACF49F64217E419700AF7FCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF49F63217E419700AF7FCC /* ViewController.swift */; };
 		ACF49F67217E419700AF7FCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF49F65217E419700AF7FCC /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC70CEE22180E1CF00942DD6 /* imageDownloaderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageDownloaderDelegate.swift; sourceTree = "<group>"; };
 		ACF49F5E217E419700AF7FCC /* delegateImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = delegateImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF49F61217E419700AF7FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACF49F63217E419700AF7FCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				ACF49F63217E419700AF7FCC /* ViewController.swift */,
 				ACF49F65217E419700AF7FCC /* Main.storyboard */,
 				ACF49F73217E445700AF7FCC /* imageDownloader.swift */,
+				AC70CEE22180E1CF00942DD6 /* imageDownloaderDelegate.swift */,
 				ACF49F68217E419900AF7FCC /* Assets.xcassets */,
 				ACF49F6A217E419900AF7FCC /* LaunchScreen.storyboard */,
 				ACF49F6D217E419900AF7FCC /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACF49F74217E445700AF7FCC /* imageDownloader.swift in Sources */,
+				AC70CEE32180E1CF00942DD6 /* imageDownloaderDelegate.swift in Sources */,
 				ACF49F64217E419700AF7FCC /* ViewController.swift in Sources */,
 				ACF49F62217E419700AF7FCC /* AppDelegate.swift in Sources */,
 			);
